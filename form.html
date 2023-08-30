@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./css/form.css">
+  <link href="//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold" rel="stylesheet"
+    type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="login">
+      <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+      <form action="">
+        <div class="id">
+          <span>Mã sinh viên</span>
+          <span id="id_error" class="error"></span>
+          <br>
+          <input type="text" name="id" placeholder="">
+        </div>
+        <div class="fullName">
+          <span>Họ và tên</span>
+          <span id="name_error" class="error"></span>
+          <br>
+          <input type="text" name="name" placeholder="">
+        </div>
+        <div class="email">
+          <span>Email</span>
+          <span id="email_error" class="error"></span>
+          <br>
+          <input type="email" name="email" placeholder="">
+        </div>
+        <div class="gender">
+          <span>Giới tính</span>
+          <span id="sex_error" class="error"></span>
+          <br>
+          <div class="gender-row">
+              <div class="gender-colum">
+                <span>Nam</span>
+                <input class="status_sex" name="sex" type="radio">
+              </div>
+              <div class="gender-colum">
+                <span>Nữ</span>
+                <input class="status_sex" name="sex" type="radio">
+              </div>
+          </div>
+        </div>
+        <div class="favorite">
+          <span>Sở thích</span>
+          <span id="favorite_error" class="error"></span>
+          <br>
+          <div class="favorite-row">
+              <div class="favorite-colum">
+                <span>Đọc sách</span>
+                <input class="status_favorite" type="checkbox">
+              </div>
+              <div class="favorite-colum">
+                <span>Du lịch</span>
+                <input class="status_favorite" type="checkbox">
+              </div>
+              <div class="favorite-colum">
+                <span>Âm nhạc</span>
+                <input class="status_favorite" type="checkbox">
+              </div>
+              <div class="favorite-colum">
+                <span>Ẩm thực</span>
+                <input class="status_favorite" type="checkbox">
+              </div>
+              <div class="favorite-colum">
+                <span>Khác</span>
+                <input class="status_favorite" type="checkbox">
+              </div>
+          </div>
+        </div>
+        <div class="nationality">
+          <span>Quốc tịch</span>
+          <span id="nationality_error" class="error"></span>
+          <select name="" id="nationality">
+            <option value="null">Chọn quốc tịch</option>
+            <option value="">Việt Nam</option>
+            <option value="">Campuchia</option>
+            <option value="">Lào</option>
+            <option value="">Thái Lan</option>
+            <option value="">Hàn Quốc</option>
+            <option value="">Myanmar</option>
+            <option value="">Singapore</option>
+            <option value="">Malaysia</option>
+            <option value="">CHDCND Triều Tiên</option>
+            <option value="">Nhật Bản</option>
+            <option value="">Anh Quốc</option>
+            <option value="">Đức</option>
+            <option value="">Tây Ban Nha</option>
+            <option value="">Trung Quốc</option>
+            <option value="">Mỹ</option>
+          </select>
+        </div>
+        <div class="note">
+          <span>Ghi chú</span>
+          <span id="note_error" class="error"></span>
+          <textarea name="note" id="" cols="50" rows="5"></textarea>
+
+        </div>
+      </form>
+      <button onclick="validate()" type="submit">Đăng ký</button>
+    </div>
+  </div>
+  <script src="./js/form.js"></script>
+</body>
+
+</html>

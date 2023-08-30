@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: BeaufortforLOL-Bold;
+}
+
+html {
+    background-image: url(/images/backgroundslideshow.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.container {
+    margin: auto;
+    height: 50px;
+}
+
+hr {
+    background-color: burlywood;
+}
+
+.text {
+    margin: 20px 0;
+}
+
+h1 {
+    padding-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 28px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px;
+}
+
+
+
+.btn {
+    margin: auto;
+}
+
+
+.btn button:hover {
+    background: wheat;
+    color: #cc9b28;
+}
+
+
+.img {
+    text-align: center;
+}
+
+img {
+    width: 650px;
+    height: 370px;
+    border-radius: 8px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color:burlywood;
+    border: none;
+    border: 0,5px solid burlywood;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 20px;
+    display: block;
+}
+
+.number {
+    text-align: center;
+    margin-top: 20px;
+}
+
+span {
+    text-align: center;
+    color: #aeaeae;
+    font-size: 25px;
+}
